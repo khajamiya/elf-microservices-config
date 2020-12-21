@@ -7,7 +7,7 @@ zuul:
     graph-service: /graph/**
     user-service: /users/**
     api-gateway: /gateway/**
-
+        
 server:
   port: 8080
   compression:
@@ -27,3 +27,4 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://discovery-server:8761/eureka/
+    fetchRegistry: true
