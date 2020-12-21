@@ -1,12 +1,12 @@
 zuul:
-  prefix: /api
+  prefix: /api/v1
   ignoredServices: '*'
   routes:
-    elf-activity-service: /api/v1/activities/**
-    elf-task-manager: /api/v1/tasks/**
-    elf-graph-service: /api/v1/graph/**
-    elf-user-service: /api/v1/users/**
-    elf-api-gateway: /gateway/**
+    activity-service: /activities/**
+    task-manager: /tasks/**
+    graph-service: /graph/**
+    user-service: /users/**
+    api-gateway: /gateway/**
 
 server:
   port: 8080
