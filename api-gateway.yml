@@ -17,9 +17,7 @@ zuul:
     api-gateway:
        path: /gateway/**
        url: http://api-gateway:8080
-ribbon:
-  eureka:
-    enabled: true
+
 server:
   port: 8080
   compression:
@@ -39,4 +37,4 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://discovery-server:8761/eureka/
-    fetchRegistry: true
+
