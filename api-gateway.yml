@@ -2,21 +2,11 @@ zuul:
   prefix: /api/v1
   ignoredServices: '*'
   routes:
-    activity-service:
-       path: /activities/**
-       url: http://activity-service:8090
-    task-manager:
-       path: /tasks/**
-       url: http://task-manager:8092
-    graph-service:
-       path: /graph/**
-       url: http://graph-service:8095
-    user-service:
-       path: /users/**
-       url: http://user-service:8098
-    api-gateway:
-       path: /gateway/**
-       url: http://api-gateway:8080
+    activity-service: /activities/**
+    task-manager: /tasks/**
+    graph-service: /graph/**
+    user-service: /users/**
+    api-gateway: /gateway/**
 
 server:
   port: 8080
